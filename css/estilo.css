@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h3{
+    text-decoration: underline;
+    color: brown;
+}
+img{
+    width: 800px;
+    height: 550px;
+}
+body{
+    line-height: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{ 
+    color: white;
+}
+.boton{
+    background-color: #00bacd;
+    color: white;
+    border-radius: 20px;
+}
+.boton-fachero {
+      background: linear-gradient(135deg, #00feba, #5b548a);
+      color: white;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 50px;
+      box-shadow: 0 10px 20px rgba(0, 255, 200, 0.3);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .boton-fachero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transition: left 0.4s ease;
+    }
+
+    .boton-fachero:hover::before {
+      left: 100%;
+    }
+
+    .boton-fachero:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0, 255, 200, 0.4);
+    }
+    .hero{
+        /*background: linear-gradient(to right, blue,red);*/
+        /*background-image: url(/img/Roma.png);*/
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/img/Roma.png) center/cover;
+        color: white;
+        text-align: center;
+        height: 100vh;
+    }
+    header{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      background-color: black;
+    }
+    a{
+      color:white;
+    }
